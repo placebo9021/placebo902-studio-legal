@@ -3,16 +3,132 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Placebo902 Studio — Información legal</title>
+    <meta name="description" content="Sitio oficial de Placebo902 Studio, una aplicación de escritorio privada para preparar y transferir videos de gaming a TikTok como borradores.">
+    <title>Placebo902 Studio — Sitio oficial</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #09090b;
+        color: #fafafa;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: radial-gradient(circle at top right, #2f1232 0, #09090b 42%);
+      }
+
+      main {
+        width: min(900px, calc(100% - 40px));
+        margin: 0 auto;
+        padding: 72px 0;
+      }
+
+      .eyebrow {
+        color: #fe2c55;
+        font-weight: 700;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 12px 0 20px;
+        font-size: clamp(2.6rem, 8vw, 5.6rem);
+        line-height: .95;
+      }
+
+      .intro {
+        max-width: 720px;
+        color: #d4d4d8;
+        font-size: 1.25rem;
+        line-height: 1.7;
+      }
+
+      section {
+        margin-top: 52px;
+        padding: 28px;
+        border: 1px solid #2f2f35;
+        border-radius: 20px;
+        background: rgba(24, 24, 27, .82);
+      }
+
+      h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+      }
+
+      ol {
+        margin: 0;
+        padding-left: 1.4rem;
+        color: #e4e4e7;
+        line-height: 1.8;
+      }
+
+      .notice {
+        color: #a1a1aa;
+        line-height: 1.7;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 40px;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #3f3f46;
+        border-radius: 999px;
+        padding: 11px 16px;
+      }
+
+      a:hover,
+      a:focus-visible {
+        border-color: #25f4ee;
+        color: #25f4ee;
+      }
+
+      footer {
+        margin-top: 52px;
+        color: #71717a;
+        font-size: .9rem;
+      }
+    </style>
   </head>
   <body>
     <main>
+      <p class="eyebrow">Sitio oficial</p>
       <h1>Placebo902 Studio</h1>
-      <p>Información legal de la aplicación.</p>
-      <ul>
-        <li><a href="privacy.html">Política de privacidad</a></li>
-        <li><a href="terms.html">Términos de servicio</a></li>
-      </ul>
+      <p class="intro">Aplicación privada de escritorio que ayuda al propietario de la cuenta Placebo902 a preparar videos originales de gaming y transferirlos de forma segura a TikTok como borradores.</p>
+
+      <section>
+        <h2>Cómo funciona la integración con TikTok</h2>
+        <ol>
+          <li>El propietario inicia sesión mediante TikTok Login Kit y autoriza su propia cuenta.</li>
+          <li>Placebo902 Studio prepara el video, la narración, los subtítulos y los metadatos.</li>
+          <li>La Content Posting API transfiere el archivo a la bandeja de TikTok como borrador mediante el permiso <code>video.upload</code>.</li>
+          <li>El propietario revisa, edita y decide si publica el borrador desde la aplicación de TikTok.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Privacidad y control</h2>
+        <p class="notice">Placebo902 Studio no publica contenido automáticamente ni ofrece acceso a terceros. Las credenciales y tokens de autorización se almacenan localmente y se utilizan únicamente para la cuenta autorizada por su propietario.</p>
+      </section>
+
+      <nav aria-label="Información legal">
+        <a href="privacy.html">Política de privacidad</a>
+        <a href="terms.html">Términos de servicio</a>
+      </nav>
+
+      <footer>© 2026 Placebo902 Studio</footer>
     </main>
   </body>
 </html>
