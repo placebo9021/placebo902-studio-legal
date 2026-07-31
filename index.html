@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sitio oficial de Placebo902 Studio, una aplicación de escritorio privada para preparar y transferir videos de gaming a TikTok como borradores.">
+    <meta name="description" content="Sitio oficial de Placebo902 Studio, una aplicación de escritorio para preparar y transferir videos de gaming a TikTok como borradores.">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <title>Placebo902 Studio — Sitio oficial</title>
     <style>
       :root {
@@ -26,6 +28,14 @@
         width: min(900px, calc(100% - 40px));
         margin: 0 auto;
         padding: 72px 0;
+      }
+
+      .brand-icon {
+        display: block;
+        width: 112px;
+        height: 112px;
+        margin-bottom: 28px;
+        object-fit: contain;
       }
 
       .eyebrow {
@@ -104,23 +114,24 @@
   </head>
   <body>
     <main>
+      <img class="brand-icon" src="brand-icon.png" alt="Icono oficial de Placebo902 Studio" width="112" height="112">
       <p class="eyebrow">Sitio oficial</p>
       <h1>Placebo902 Studio</h1>
-      <p class="intro">Aplicación privada de escritorio que ayuda al propietario de la cuenta Placebo902 a preparar videos originales de gaming y transferirlos de forma segura a TikTok como borradores.</p>
+      <p class="intro">Aplicación de escritorio que ayuda a creadores autorizados a preparar videos originales de gaming y transferirlos de forma segura a TikTok como borradores.</p>
 
       <section>
         <h2>Cómo funciona la integración con TikTok</h2>
         <ol>
-          <li>El propietario inicia sesión mediante TikTok Login Kit y autoriza su propia cuenta.</li>
+          <li>El creador inicia sesión mediante TikTok Login Kit y autoriza su propia cuenta.</li>
           <li>Placebo902 Studio prepara el video, la narración, los subtítulos y los metadatos.</li>
           <li>La Content Posting API transfiere el archivo a la bandeja de TikTok como borrador mediante el permiso <code>video.upload</code>.</li>
-          <li>El propietario revisa, edita y decide si publica el borrador desde la aplicación de TikTok.</li>
+          <li>El creador revisa, edita y decide si publica el borrador desde la aplicación de TikTok.</li>
         </ol>
       </section>
 
       <section>
         <h2>Privacidad y control</h2>
-        <p class="notice">Placebo902 Studio no publica contenido automáticamente ni ofrece acceso a terceros. Las credenciales y tokens de autorización se almacenan localmente y se utilizan únicamente para la cuenta autorizada por su propietario.</p>
+        <p class="notice">Placebo902 Studio no publica contenido automáticamente ni ofrece acceso no autorizado a terceros. Las credenciales y tokens de autorización se almacenan localmente y se utilizan únicamente para la cuenta autorizada por el creador.</p>
       </section>
 
       <nav aria-label="Información legal">
