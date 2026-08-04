@@ -1,145 +1,119 @@
 <!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sitio oficial de Placebo902 Studio, una aplicación de escritorio para preparar y transferir videos de gaming a TikTok como borradores.">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <title>Placebo902 Studio — Sitio oficial</title>
-    <style>
-      :root {
-        color-scheme: dark;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: #09090b;
-        color: #fafafa;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        background: radial-gradient(circle at top right, #2f1232 0, #09090b 42%);
-      }
-
-      main {
-        width: min(900px, calc(100% - 40px));
-        margin: 0 auto;
-        padding: 72px 0;
-      }
-
-      .brand-icon {
-        display: block;
-        width: 112px;
-        height: 112px;
-        margin-bottom: 28px;
-        object-fit: contain;
-      }
-
-      .eyebrow {
-        color: #fe2c55;
-        font-weight: 700;
-        letter-spacing: .08em;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        max-width: 760px;
-        margin: 12px 0 20px;
-        font-size: clamp(2.6rem, 8vw, 5.6rem);
-        line-height: .95;
-      }
-
-      .intro {
-        max-width: 720px;
-        color: #d4d4d8;
-        font-size: 1.25rem;
-        line-height: 1.7;
-      }
-
-      section {
-        margin-top: 52px;
-        padding: 28px;
-        border: 1px solid #2f2f35;
-        border-radius: 20px;
-        background: rgba(24, 24, 27, .82);
-      }
-
-      h2 {
-        margin-top: 0;
-        font-size: 1.5rem;
-      }
-
-      ol {
-        margin: 0;
-        padding-left: 1.4rem;
-        color: #e4e4e7;
-        line-height: 1.8;
-      }
-
-      .notice {
-        color: #a1a1aa;
-        line-height: 1.7;
-      }
-
-      nav {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 40px;
-      }
-
-      a {
-        color: #fff;
-        text-decoration: none;
-        border: 1px solid #3f3f46;
-        border-radius: 999px;
-        padding: 11px 16px;
-      }
-
-      a:hover,
-      a:focus-visible {
-        border-color: #25f4ee;
-        color: #25f4ee;
-      }
-
-      footer {
-        margin-top: 52px;
-        color: #71717a;
-        font-size: .9rem;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <img class="brand-icon" src="brand-icon.png" alt="Icono oficial de Placebo902 Studio" width="112" height="112">
-      <p class="eyebrow">Sitio oficial</p>
-      <h1>Placebo902 Studio</h1>
-      <p class="intro">Aplicación de escritorio que ayuda a creadores autorizados a preparar videos originales de gaming y transferirlos de forma segura a TikTok como borradores.</p>
-
-      <section>
-        <h2>Cómo funciona la integración con TikTok</h2>
-        <ol>
-          <li>El creador inicia sesión mediante TikTok Login Kit y autoriza su propia cuenta.</li>
-          <li>Placebo902 Studio prepara el video, la narración, los subtítulos y los metadatos.</li>
-          <li>La Content Posting API transfiere el archivo a la bandeja de TikTok como borrador mediante el permiso <code>video.upload</code>.</li>
-          <li>El creador revisa, edita y decide si publica el borrador desde la aplicación de TikTok.</li>
-        </ol>
-      </section>
-
-      <section>
-        <h2>Privacidad y control</h2>
-        <p class="notice">Placebo902 Studio no publica contenido automáticamente ni ofrece acceso no autorizado a terceros. Las credenciales y tokens de autorización se almacenan localmente y se utilizan únicamente para la cuenta autorizada por el creador.</p>
-      </section>
-
-      <nav aria-label="Información legal">
-        <a href="privacy.html">Política de privacidad</a>
-        <a href="terms.html">Términos de servicio</a>
-      </nav>
-
-      <footer>© 2026 Placebo902 Studio</footer>
-    </main>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Placebo902 Studio is a desktop production workflow for gaming creators: ingest, edit, review, publish, reconcile, and learn from short-form video.">
+  <meta name="theme-color" content="#050706">
+  <title>Placebo902 Studio | Gaming creator workflow</title>
+  <link rel="icon" href="assets/app-icon.png">
+  <link rel="apple-touch-icon" href="assets/app-icon.png">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Placebo902 Studio home">
+      <img src="assets/app-icon.png" alt="" width="46" height="46">
+      <span>Placebo902 <b>Studio</b></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#product">Product</a>
+      <a href="workflow.html">Workflow</a>
+      <a href="tiktok-integration.html">TikTok integration</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <div class="legal-links" aria-label="Legal links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Production desktop application</p>
+        <h1>From gaming clip to creator-approved post.</h1>
+        <p class="lede">Placebo902 Studio organizes the complete short-form production cycle: media intake, editorial checks, vertical editing, subtitles, creator review, publishing, reconciliation, analytics, and operational health.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="workflow.html">Explore the workflow</a>
+          <a class="button secondary" href="tiktok-integration.html">Review the TikTok flow</a>
+        </div>
+        <ul class="proof-list">
+          <li>Creator authorization required</li>
+          <li>Human review remains available</li>
+          <li>Tokens stored in the creator's local environment</li>
+        </ul>
+      </div>
+      <div class="product-window" aria-label="Illustration of the Studio control center">
+        <div class="window-bar"><i></i><i></i><i></i><span>STUDIO CONTROL CENTER</span></div>
+        <div class="window-body">
+          <aside>
+            <img src="assets/app-icon.png" alt="Placebo902 Studio icon">
+            <span class="active">Overview</span><span>Queue</span><span>Content</span><span>Channels</span><span>Analytics</span>
+          </aside>
+          <div class="console">
+            <div class="status-line"><span><i class="status-dot"></i> Studio operational</span><b>Production</b></div>
+            <div class="metric-grid">
+              <article><span>Pipeline</span><strong>Active</strong><small>Continuous checks</small></article>
+              <article><span>Editorial</span><strong>Guarded</strong><small>Quality and similarity</small></article>
+              <article><span>Publishing</span><strong>Connected</strong><small>Authorized channels</small></article>
+            </div>
+            <div class="flow-card">
+              <div><b>01</b><span>Ingest</span></div><em></em><div><b>02</b><span>Edit</span></div><em></em>
+              <div><b>03</b><span>Review</span></div><em></em><div><b>04</b><span>Transfer</span></div>
+            </div>
+            <div class="activity"><span>Latest system activity</span><b>Checks completed</b><small>Queue, credentials, storage, and publication state</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="product" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">The product</p>
+        <h2>A working production system, not a posting shortcut.</h2>
+        <p>The Studio coordinates each stage of the creator's workflow and records the state of every media item so the next action is observable and recoverable.</p>
+      </div>
+      <div class="feature-grid">
+        <article><span>01</span><h3>Media intake</h3><p>Imports authorized gaming captures, reads technical metadata, detects duplicates, and preserves the original file.</p></article>
+        <article><span>02</span><h3>Editorial control</h3><p>Evaluates technical quality, visual suitability, topic repetition, and publication eligibility before a candidate advances.</p></article>
+        <article><span>03</span><h3>Short-form edit</h3><p>Builds a vertical version with channel branding and context-aware subtitles while protecting original gameplay visibility.</p></article>
+        <article><span>04</span><h3>Creator review</h3><p>Keeps approval, change-request, postponement, and rejection decisions visible in the content queue.</p></article>
+        <article><span>05</span><h3>Authorized transfer</h3><p>Uses platform OAuth permissions to transfer only eligible content to the account authorized by its creator.</p></article>
+        <article><span>06</span><h3>Reconciliation</h3><p>Checks remote publication state, analytics availability, channel connectivity, storage, and queue health.</p></article>
+      </div>
+    </section>
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Designed for control</p>
+        <h2>The creator stays responsible for the account and the post.</h2>
+        <p>Placebo902 Studio does not request a TikTok password. Login Kit grants limited, revocable OAuth permissions. For draft upload, the creator still opens TikTok, reviews the received draft, edits it if needed, and makes the final publishing decision.</p>
+        <a class="text-link" href="tiktok-integration.html">See every TikTok step and requested scope →</a>
+      </div>
+      <div class="control-list">
+        <div><b>Explicit authorization</b><span>The account owner approves access on TikTok's own authorization screen.</span></div>
+        <div><b>Minimum permissions</b><span>The integration requests only basic account identification and draft upload.</span></div>
+        <div><b>Local credential storage</b><span>Tokens remain in the creator-controlled Studio environment.</span></div>
+        <div><b>Revocable access</b><span>The creator can disconnect the channel or revoke platform authorization.</span></div>
+      </div>
+    </section>
+    <section class="section reliability">
+      <div class="section-heading"><p class="eyebrow">Operational model</p><h2>Built to identify failures before a publication is missed.</h2></div>
+      <div class="reliability-grid">
+        <article><b>Queue health</b><p>Detects blocked, stale, duplicated, or ineligible candidates.</p></article>
+        <article><b>Channel health</b><p>Surfaces authorization problems and provides a clear reconnect path.</p></article>
+        <article><b>Storage health</b><p>Tracks working files and removes disposable artifacts through controlled cleanup.</p></article>
+        <article><b>Remote truth</b><p>Reconciles local records with the connected publishing platform.</p></article>
+      </div>
+    </section>
+    <section class="section cta">
+      <div><p class="eyebrow">Product documentation</p><h2>Review the complete implementation.</h2><p>Read the workflow, TikTok product and scope usage, data handling, and support information.</p></div>
+      <div class="cta-links"><a href="workflow.html">Production workflow</a><a href="tiktok-integration.html">TikTok integration</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></div>
+    </section>
+  </main>
+  <footer>
+    <div><img src="assets/app-icon.png" alt="" width="34" height="34"><span>Placebo902 Studio</span></div>
+    <nav><a href="workflow.html">Workflow</a><a href="tiktok-integration.html">TikTok integration</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+    <p>© 2026 Placebo902 Studio. Gaming creator production workflow.</p>
+  </footer>
+</body>
 </html>

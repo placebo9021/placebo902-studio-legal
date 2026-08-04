@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Complete Placebo902 Studio production workflow, from gaming media intake through editorial review, publishing, reconciliation, and analytics."><meta name="theme-color" content="#050706"><title>Production workflow | Placebo902 Studio</title><link rel="icon" href="assets/app-icon.png"><link rel="stylesheet" href="site.css"></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="46" height="46"><span>Placebo902 <b>Studio</b></span></a><nav><a href="index.html#product">Product</a><a href="workflow.html">Workflow</a><a href="tiktok-integration.html">TikTok integration</a><a href="support.html">Support</a></nav><div class="legal-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></header>
+<main class="document">
+  <p class="breadcrumbs"><a href="index.html">Home</a> / Production workflow</p>
+  <p class="eyebrow">Product documentation</p><h1>Production workflow</h1>
+  <p class="intro">Placebo902 Studio is a desktop application that manages an observable, stateful path from authorized gaming media to a platform-ready post.</p>
+  <section><h2>End-to-end stages</h2><ol class="step-list">
+    <li><div><b>Authorized intake.</b> The Studio imports creator-provided gameplay media and records its source, format, duration, and fingerprint.</div></li>
+    <li><div><b>Technical validation.</b> Media is checked for readability, dimensions, duration, usable audio, and duplicate content.</div></li>
+    <li><div><b>Editorial decision.</b> The system evaluates whether the content is suitable, sufficiently distinct, and eligible to advance.</div></li>
+    <li><div><b>Short-form production.</b> It creates the vertical edit, adds channel branding, and applies subtitles according to the media type.</div></li>
+    <li><div><b>Quality gates.</b> Output is validated before it enters the approval and scheduling queue.</div></li>
+    <li><div><b>Creator review.</b> The creator may approve, request changes, postpone, or reject a candidate from the dashboard.</div></li>
+    <li><div><b>Authorized publishing.</b> Eligible media is transferred only to channels connected through their official authorization flows.</div></li>
+    <li><div><b>Reconciliation and learning.</b> Remote state and available analytics are synchronized so the next production decision uses current evidence.</div></li>
+  </ol></section>
+  <section><h2>Media-specific subtitle rules</h2><p>Original narrated pieces use large, centered written narration for legibility. Creator-provided gameplay clips keep subtitles centered near the bottom so they do not obstruct the action, HUD, or important visual context.</p></section>
+  <section><h2>Editorial states</h2><table><thead><tr><th>State</th><th>Meaning</th><th>System behavior</th></tr></thead><tbody>
+    <tr><td>Pending</td><td>Candidate is ready for checks or optional review.</td><td>The pipeline can continue when all mandatory gates pass.</td></tr>
+    <tr><td>Approved</td><td>Creator or policy approved the candidate.</td><td>It becomes eligible for scheduling and authorized transfer.</td></tr>
+    <tr><td>Changes requested</td><td>The candidate needs a correction.</td><td>It is blocked until rebuilt and revalidated.</td></tr>
+    <tr><td>Postponed</td><td>The creator chose to defer it.</td><td>It remains out of active publication selection.</td></tr>
+    <tr><td>Rejected</td><td>The content should not be published.</td><td>It is excluded and cannot silently return to the queue.</td></tr>
+  </tbody></table></section>
+  <section><h2>Operational recovery</h2><p>Daily health checks validate service state, storage, credentials, queue continuity, remote publication truth, analytics freshness, and disposable work files. Recoverable failures are retried or reconciled; failures that require account authorization are surfaced with a reconnect action.</p><p class="notice">The dashboard is a control and observability interface. It does not expose TikTok credentials, request the creator's TikTok password, or replace TikTok's own final draft review.</p></section>
+  <section><h2>Related documentation</h2><div class="card-links"><a href="tiktok-integration.html"><b>TikTok integration</b><span>Login Kit, scopes, draft upload, and creator control.</span></a><a href="privacy.html"><b>Privacy Policy</b><span>Data categories, purposes, storage, and revocation.</span></a><a href="support.html"><b>Support</b><span>Common questions and troubleshooting paths.</span></a><a href="terms.html"><b>Terms of Service</b><span>Use conditions and connected platforms.</span></a></div></section>
+</main>
+<footer><div><img src="assets/app-icon.png" alt="" width="34" height="34"><span>Placebo902 Studio</span></div><nav><a href="index.html">Product</a><a href="workflow.html">Workflow</a><a href="tiktok-integration.html">TikTok integration</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav><p>© 2026 Placebo902 Studio.</p></footer>
+</body></html>

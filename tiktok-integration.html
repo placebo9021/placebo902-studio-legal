@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="How Placebo902 Studio uses TikTok Login Kit, user.info.basic, Content Posting API, and video.upload for creator-controlled draft transfer."><meta name="theme-color" content="#050706"><title>TikTok integration | Placebo902 Studio</title><link rel="icon" href="assets/app-icon.png"><link rel="stylesheet" href="site.css"></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="46" height="46"><span>Placebo902 <b>Studio</b></span></a><nav><a href="index.html#product">Product</a><a href="workflow.html">Workflow</a><a href="tiktok-integration.html">TikTok integration</a><a href="support.html">Support</a></nav><div class="legal-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></header>
+<main class="document">
+  <p class="breadcrumbs"><a href="index.html">Home</a> / TikTok integration</p>
+  <p class="eyebrow">Integration documentation</p><h1>TikTok authorization and draft transfer</h1>
+  <p class="intro">The production integration connects a creator's TikTok account through Login Kit and transfers an approved video to that creator's TikTok Inbox as a draft. The creator makes the final publishing decision inside TikTok.</p>
+  <section><h2>Products and scopes</h2><table><thead><tr><th>Product or scope</th><th>Use in Placebo902 Studio</th><th>Creator benefit</th></tr></thead><tbody>
+    <tr><td>Login Kit</td><td>Opens TikTok's authorization flow and returns an OAuth code to the desktop application.</td><td>The creator connects the correct account without sharing a password.</td></tr>
+    <tr><td>user.info.basic</td><td>Reads the authorized account's basic identity, including open ID, display name, and avatar when available.</td><td>The dashboard shows which TikTok account is connected and prevents an ambiguous transfer.</td></tr>
+    <tr><td>Content Posting API</td><td>Initializes and transfers an eligible video through TikTok's draft-upload workflow.</td><td>The prepared file reaches the creator's TikTok Inbox without manual file movement.</td></tr>
+    <tr><td>video.upload</td><td>Allows the video to be uploaded as a draft for further review and editing.</td><td>The creator retains control of caption, final edits, audience settings, and publication.</td></tr>
+  </tbody></table><p class="notice">Direct Post is not enabled. Placebo902 Studio does not publish directly to the creator's TikTok profile through this integration.</p></section>
+  <section><h2>Complete creator flow</h2><ol class="step-list">
+    <li><div>The creator opens <b>Channels</b> in Placebo902 Studio and chooses to connect TikTok.</div></li>
+    <li><div>The Studio opens TikTok's official Login Kit authorization page.</div></li>
+    <li><div>The creator signs in to TikTok, reviews the requested permissions, and explicitly authorizes the application.</div></li>
+    <li><div>TikTok redirects the authorization result to the configured desktop callback. The Studio exchanges the one-time code for tokens.</div></li>
+    <li><div>The dashboard uses <b>user.info.basic</b> to identify the connected account to the creator.</div></li>
+    <li><div>After a video passes editorial and technical checks, the creator approves it for transfer.</div></li>
+    <li><div>The Studio uses <b>video.upload</b> to initialize and upload the video to the creator's TikTok Inbox as a draft.</div></li>
+    <li><div>TikTok notifies the creator. The creator reviews or edits the draft, chooses final settings, and decides whether to publish.</div></li>
+  </ol></section>
+  <section><h2>Data and token handling</h2><ul><li>Tokens are stored in the creator-controlled local Studio environment, not displayed in the dashboard or public website.</li><li>Tokens are used only for the TikTok account that completed authorization.</li><li>The Studio transfers the approved video file and only the metadata needed for the upload operation.</li><li>The creator can disconnect TikTok in the Studio and revoke access from TikTok's account settings.</li><li>The Studio does not sell TikTok account information or use it for advertising.</li></ul></section>
+  <section><h2>Failure behavior</h2><p>If authorization expires or TikTok rejects an upload, the candidate is not marked as published. The dashboard reports the disconnected or failed state, keeps the candidate recoverable, and requires valid authorization before another transfer.</p></section>
+  <section><h2>Platform review configuration</h2><p>The production application requests Login Kit, Content Posting API, <b>user.info.basic</b>, and <b>video.upload</b>. The review demonstration uses the TikTok sandbox and shows the actual desktop interface, authorization, connected-account identity, approved draft transfer, and resulting TikTok draft.</p></section>
+  <section><h2>Policies and support</h2><div class="card-links"><a href="privacy.html"><b>Privacy Policy</b><span>How account and media data are processed.</span></a><a href="terms.html"><b>Terms of Service</b><span>Rules for application and platform use.</span></a><a href="support.html"><b>Support</b><span>Authorization and upload troubleshooting.</span></a><a href="workflow.html"><b>Production workflow</b><span>What happens before a video becomes eligible.</span></a></div></section>
+</main>
+<footer><div><img src="assets/app-icon.png" alt="" width="34" height="34"><span>Placebo902 Studio</span></div><nav><a href="index.html">Product</a><a href="workflow.html">Workflow</a><a href="tiktok-integration.html">TikTok integration</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav><p>© 2026 Placebo902 Studio.</p></footer>
+</body></html>

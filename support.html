@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Placebo902 Studio product support and connected-channel troubleshooting."><meta name="theme-color" content="#050706"><title>Support | Placebo902 Studio</title><link rel="icon" href="assets/app-icon.png"><link rel="stylesheet" href="site.css"></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><img src="assets/app-icon.png" alt="" width="46" height="46"><span>Placebo902 <b>Studio</b></span></a><nav><a href="index.html#product">Product</a><a href="workflow.html">Workflow</a><a href="tiktok-integration.html">TikTok integration</a><a href="support.html">Support</a></nav><div class="legal-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></header>
+<main class="document">
+  <p class="breadcrumbs"><a href="index.html">Home</a> / Support</p><p class="eyebrow">Product support</p><h1>Support and troubleshooting</h1>
+  <p class="intro">Use the Studio's channel and health panels first: they identify whether an issue belongs to media processing, authorization, transfer, publication state, analytics, or storage.</p>
+  <section><h2>Connected-channel questions</h2>
+    <h3>Why does TikTok show as disconnected?</h3><p>The authorization may have expired, been revoked, or no longer include the required scope. Choose reconnect in the Channels panel and complete TikTok's official authorization flow again.</p>
+    <h3>Does the Studio need my TikTok password?</h3><p>No. Login happens on TikTok's authorization page. The Studio receives OAuth tokens after the creator approves the requested permissions; it never asks for or stores the TikTok password.</p>
+    <h3>Why is my video not visible on my TikTok profile?</h3><p>The Content Posting API integration transfers the video as a draft. Open the TikTok notification or Inbox, review the draft, choose the final settings, and publish it from TikTok.</p>
+    <h3>What happens if a transfer fails?</h3><p>The Studio preserves the candidate and records the failure. It does not mark the video as published. Retry only after the channel and file checks are healthy.</p>
+  </section>
+  <section><h2>Content workflow questions</h2>
+    <h3>Can I reject or postpone a video?</h3><p>Yes. Rejected content is excluded from publication. Postponed content remains outside active selection until its state is intentionally changed.</p>
+    <h3>Why are gameplay subtitles lower than narrated-video subtitles?</h3><p>Gameplay clips keep subtitles near the lower center to preserve the action and HUD. Narrated original pieces use larger centered text because written narration is part of that format.</p>
+    <h3>How does the Studio avoid repeated content?</h3><p>It uses media fingerprints and editorial history to detect duplicate source files, reused gameplay, and overly similar original topics before scheduling.</p>
+  </section>
+  <section><h2>Account access and deletion</h2><p>A creator may revoke a connected platform authorization at any time. For questions about stored account information, access, correction, deletion, or legal policies, use the public project support channel.</p><p><a class="button primary" href="https://github.com/placebo9021/placebo902-studio-legal/issues">Open a support request</a></p></section>
+  <section><h2>Related documentation</h2><div class="card-links"><a href="workflow.html"><b>Production workflow</b><span>States, safeguards, and recovery.</span></a><a href="tiktok-integration.html"><b>TikTok integration</b><span>Products, scopes, and complete authorization flow.</span></a><a href="privacy.html"><b>Privacy Policy</b><span>Data handling and creator rights.</span></a><a href="terms.html"><b>Terms of Service</b><span>Application and platform conditions.</span></a></div></section>
+</main>
+<footer><div><img src="assets/app-icon.png" alt="" width="34" height="34"><span>Placebo902 Studio</span></div><nav><a href="index.html">Product</a><a href="workflow.html">Workflow</a><a href="tiktok-integration.html">TikTok integration</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav><p>© 2026 Placebo902 Studio.</p></footer>
+</body></html>
